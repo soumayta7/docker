@@ -3,28 +3,35 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] w-full relative">
-      <div className="text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
-        <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black">
-          Summer styles are finally here
-        </h1>
-        <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
-          This year, our new summer collection will shelter you from the harsh
-          elements of a world that doesn&apos;t care if you live or die.
-        </p>
-        <UnderlineLink href="/store">Explore products</UnderlineLink>
-      </div>
-      <Image
-        src="/hero.jpg"
-        layout="fill"
-        loading="eager"
-        priority={true}
-        quality={90}
-        objectFit="cover"
-        alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-        className="absolute inset-0"
-        draggable="false"
-      />
+    <div className="milton-container">
+    <div className="flex">
+    <div className="w-7/12  bg1">
+    <div className="container my-auto px-60 pb-48">
+       <h1 className="welcome">Welcome to <br></br><span className="text-color-1"> CBinDeed shop</span></h1>
+       <br></br>
+       <p className="wel-content">Our carefully curated selection is designed to provide you with the highest quality CBD products on the market, our shop is the perfect destination for those looking to indulge in the therapeutic benefits of CBD in a sophisticated setting. So come in, browse our selection, and let us help you discover the many benefits of CBD.</p>
+       <br></br>
+       <button className="get-started">
+           Get Started
+               </button>
+               
+    </div>
+    </div>
+    <div className="w-5/12">
+    <div style={{width: '100%', height: '100%', position: 'relative'}}>
+  <Image
+    alt='Mountains'
+    src='/hero.png'
+    layout='fill'
+    objectFit='cover'
+  />
+</div>
+</div>
+  
+    {/* <Image src="/hero.png"  layout="responsive"  objectFit="contain"/> */}
+   
+ 
+    </div>
     </div>
   )
 }
