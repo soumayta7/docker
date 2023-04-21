@@ -358,7 +358,7 @@ display: inline-block;
 color: rgb(152,154,150);
 font-family: Nunito;
 font-weight: 400;
-padding: 10px 30px;
+padding-right:60px;
 }
 .col-7{
 width: 58.33%!important;
@@ -412,7 +412,7 @@ font-weight: 700;
 .span1{
   position: absolute;
 top: 44%;
-left: 12%;
+left: 17%;
 transform: translate(-50%, -50%);
 }
 
@@ -549,4 +549,26 @@ background-color: #fbf9e9;
   box-shadow: 0px -4px 15px #4e4b4b5c;
     z-index: 999;
     position: relative;
+}
+
+.blog-list .title{
+  line-height: 1;
+  font-size: 16px;
+  color: rgb(98,145,59);
+  font-family: Nunito;
+  font-weight: 600;
+}
+.blog-list  p{
+  line-height: 20px;
+  font-size: 12px;
+  color: rgb(147,152,159);
+  font-family: Nunito;
+  font-weight: 400;
+}
+.read-more{
+  line-height: 20px;
+  font-size: 12px;
+  color: rgb(6,83,216);
+  font-family: Nunito;
+  font-weight: 600;
 }

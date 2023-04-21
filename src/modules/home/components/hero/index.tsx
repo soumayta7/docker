@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="milton-container">
     <div className="flex">
     <div className="w-7/12  bg1">
-    <div className="container my-auto px-60 pb-48">
+    <div className="container my-auto px-36 pb-48">
        <h1 className="welcome">Welcome to <br></br><span className="text-color-1"> CBinDeed shop</span></h1>
        <br></br>
        <p className="wel-content">Our carefully curated selection is designed to provide you with the highest quality CBD products on the market, our shop is the perfect destination for those looking to indulge in the therapeutic benefits of CBD in a sophisticated setting. So come in, browse our selection, and let us help you discover the many benefits of CBD.</p>

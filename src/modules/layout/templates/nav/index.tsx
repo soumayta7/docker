@@ -52,7 +52,7 @@ const Nav = () => {
               </div>
             </div>
  
-  <div className="flex-auto w-6/12 m-auto">
+  <div className="flex-auto w-8/12 m-auto">
   <ul className="menu">
                 <li><a href="#" className="active">Home</a></li>
                     <li><a href="#">Products</a></li>
