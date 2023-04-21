@@ -185,8 +185,7 @@
 }
 html,
 body {
-  margin: 0;
-  overflow: hidden;
+   
 }
 *{
 box-sizing: border-box;
@@ -446,4 +445,108 @@ background-color: #fbf9e9;
 }
 .text-color-1{
   color: rgb(98,145,59);
+}
+.special-offer{
+  line-height: 32px;
+  font-size: 24px;
+  color: rgb(12,18,7);
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+.product-grid{
+  border-radius: 8px;
+  /* padding: 16px; */
+  box-shadow: 0px 8px 37px #625d5d26;
+}
+
+.product-grid .price{
+  line-height: 34px;
+  font-size: 20px;
+  color: rgb(98,145,59);
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+
+.product-grid p{
+  margin: 7px 0px;
+  line-height: 16px;
+  font-size: 12px;
+  color: rgb(152,154,150);
+  font-family: Nunito;
+  font-weight: 400;
+}
+.product-grid .title{
+  line-height: 24px;
+  font-size: 16px;
+  color: rgb(12,18,7);
+  font-family: Nunito;
+  font-weight: 600;
+}
+
+
+.product-grid-2{
+  border-radius: 10px;
+  /* padding: 16px; */
+  box-shadow: 0px 8px 37px #625d5d0f;
+  border: 3px solid #9ac775b0;
+}
+.product-grid-2 .title{
+  line-height: 24px;
+  font-size: 18px;
+  color: rgb(12,18,7);
+  font-family: Nunito;
+  font-weight: 600;
+}
+.product-grid-2 p{
+  line-height: 28px;
+  font-size: 16px;
+  color: rgb(152,154,150);
+  font-family: Nunito;
+  font-weight: 400;
+}
+.product-grid-2 .price{
+  line-height: 24px;
+  font-size: 24px;
+  color: rgb(98,145,59);
+  font-family: Nunito;
+  font-weight: 700;
+}
+.addtocart{
+  background-color: rgb(60 89 36);
+  /* line-height: 24px; */
+  border: none;
+  padding: 6px 35px;
+  border-radius: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  color: rgb(255,255,255);
+  font-family: Nunito;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.product-grid .product-icon{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 99;
+}
+
+.product-grid .pro-plus{
+  background-color: rgb(60 89 36);
+  /* line-height: 24px; */
+  border: none;
+  padding: 8px 9px;
+  border-radius: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  color: rgb(255,255,255);
+  font-family: Nunito;
+  font-weight: 600;
+}
+.navbar{
+  box-shadow: 0px -4px 15px #4e4b4b5c;
+    z-index: 999;
+    position: relative;
 }

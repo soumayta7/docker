@@ -40,7 +40,7 @@ const Nav = () => {
   const { toggle } = useMobileMenu()
 
   return (
-    <div>
+    <div className="navbar">
       <div className="container2 mx-auto py-2">
 <div className="flex">
   <div className="flex-auto relative w-24 bg-red">
