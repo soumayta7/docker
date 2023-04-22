@@ -2,6 +2,7 @@ import Head from "@modules/common/components/head"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import SpecialOffer from "@modules/home/components/special-offer"
 import BestSeller  from "@modules/home/components/best-seller"
+import NewsLetter  from "@modules/home/components/newsLetter"
 import Blogs  from "@modules/home/components/blogs"
 import Hero from "@modules/home/components/hero"
 import Layout from "@modules/layout/templates"
@@ -19,6 +20,7 @@ const Home: NextPageWithLayout = () => {
       <SpecialOffer />
       <BestSeller/>
       <Blogs/>
+<NewsLetter/>
 
       <br></br>
       <br></br>

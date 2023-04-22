@@ -3,8 +3,8 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="container mx-auto px-36 mt-24" style={{'background':'#fbf9e9'}}>
-         <div className="flex my-8 pt-5">
+    <div className="container mx-auto px-36 mt-24 mb-12 pb-10" style={{'background':'#fbf9e9'}}>
+         <div className="flex my-10 pt-5">
  
   <div className="flex-1 w-64 ">
   <h2 className="special-offer">Latest blog posts</h2>

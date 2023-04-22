@@ -572,3 +572,62 @@ background-color: #fbf9e9;
   font-family: Nunito;
   font-weight: 600;
 }
+.newsletter .title{
+  line-height: 1;
+  font-size: 28px;
+  color: rgb(12,18,7);
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+.newsletter p{
+  line-height: 28px;
+  font-size: 16px;
+  color: rgb(152,154,150);
+  font-family: Nunito;
+  font-weight: 400;
+}
+
+footer .title{
+  line-height: 22px;
+  font-size: 18px;
+  color: rgb(12,18,7);
+  font-family: Nunito;
+  font-weight: 700;
+}
+footer p{
+  line-height: 22px;
+  font-size: 14px;
+  color: rgb(152,154,150);
+  font-family: Nunito;
+  font-weight: 500;
+}
+.footlink a{
+  line-height: 42px;
+  font-size: 16px;
+  color: rgb(152,154,150);
+  font-family: Nunito;
+  font-weight: 500;
+}
+
+.bg-color2{
+  background:#3c5924;
+}
+.subs{
+  line-height: 2.0;
+  font-size: 16px;
+  color: rgb(255,255,255);
+  font-family: Nunito;
+  font-weight: 600;
+  border-radius: 0px 5px 5px 0px;
+  padding: 7px 35px;
+  border: 2px solid #3c5924;
+}
+.subsinput{
+  padding: 5.5px 25px;
+  width: 34%;
+  border: 2px solid rgb(221 236 208);
+  border-radius: 6px 0px 0px 6px;
+  line-height: 2.5;
+  border-right: 0;
+}
