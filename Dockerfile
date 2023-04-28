@@ -1,36 +1,20 @@
-FROM node:18-alpine AS deps
-RUN apk add --no-cache libc6-compat
+# Use an official Node.js runtime as a parent image
+FROM node:14-alpine
+
+# Set the working directory to /app
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN  npm install --production
+# Copy package.json and package-lock.json to the container
+COPY package*.json ./
 
-FROM node:18-alpine AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the project files to the container
 COPY . .
 
-ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN npm run build
-
-FROM node:18-alpine AS runner
-WORKDIR /app
-
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
-USER nextjs
-
+# Expose port 3000 for the Node.js app to listen on
 EXPOSE 3000
 
-ENV PORT 3000
-
+# Start the Node.js app
 CMD ["npm", "start"]

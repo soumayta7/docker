@@ -21,13 +21,6 @@ const Home: NextPageWithLayout = () => {
       <BestSeller/>
       <Blogs/>
 <NewsLetter/>
-
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       {/* <FeaturedProducts /> */}
     </>
   )

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="container mx-auto px-36 mt-12 newsletter text-center" >
+    <div className="container mx-auto px-36 mt-12 newsletter text-center mb-32" >
    
   <h2 className="title text-center">Newsletter</h2>
   <p className="my-5">Sign up for our Newsletter and get Weekly Updates and get the latest information on CBD Products and their uses.</p>
