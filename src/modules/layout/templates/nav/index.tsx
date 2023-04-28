@@ -12,6 +12,7 @@ import Image from "next/image"
 const Nav = () => {
   const { pathname } = useRouter()
   const [isHome, setIsHome] = useState(false)
+  const [close,setclose]=useState(false);
   const [isScrolled, setIsScrolled] = useState(false)
 
   //useEffect that detects if window is scrolled > 5px on the Y axis
@@ -37,14 +38,96 @@ const Nav = () => {
     pathname === "/" ? setIsHome(true) : setIsHome(false)
   }, [pathname])
 
+  const handle=()=>{
+    console.log('test');
+    console.log(close);
+    close?setclose(false):setclose(true);
+    // setclose(true);
+  }
   const { toggle } = useMobileMenu()
 
   return (
+    <div>
+     {close?
+       <div className="searchbar bg-white {close}" >
+ <div className="grid grid-cols-2 gap-4 place-content-between bg-white container2 py-5">
+  <div className="mt-auto cursor">
+  <Image onClick={() =>handle()}
+      priority
+      src="/svg/close.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    /> 
+  </div>
+  <div className="text-right flex">
+ <div className="border flex">
+ <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="w-full bg-white/5 px-3.5  py-1 text-white"
+                placeholder="Search (Keyword,Product etc.)..."
+              />
+ <Image
+      priority
+      src="/svg/search.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    />  </div> 
+<div className="flex-auto xl:w-6/12  lg:w-8/12  md:w-10/12 text-right">
+  <ul className="left-ui-nav flex">
+ <li className="middle">
+ <Image
+      priority
+      src="/svg/user.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    />    
+ </li>
+<li className="middle">
+<Image
+      priority
+      src="/svg/cart.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    />  
+ </li>
+<li className="middle">
+ <div  className="flex">
+  <span className="en middle">EN</span>
+ <span  className="middle">
+ <Image
+      priority
+      src="/svg/en.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    />  
+  </span>
+                      </div>
+                    
+                     </li>
+ 
+                 </ul>
+  </div>
+
+  </div>
+</div>
+ </div>
+ :''}
+
     <div className="navbar">
       <div className="container2 mx-auto py-2">
-<div className="flex">
-  <div className="flex-auto relative w-24 bg-red">
- 
+<div className="flex relative">
+
+  <div className="flex-auto relative w-24">
+
               <div>
                 <span className="span1">C</span>
                 <span className="span2">B</span>
@@ -68,16 +151,16 @@ const Nav = () => {
                              Login
                                  </button>
                          </li>
-                    <li className="middle">
-
-                    <Image
+                    <li className="middle cursor">
+   <Image onClick={() =>handle()}
       priority
       src="/svg/search.svg"
       height={24}
       width={24}
       alt="arrow"
-    />                     </li>
-                     <li className="middle">
+    />    
+     </li>
+<li className="middle">
                     
                      <Image
       priority
@@ -121,7 +204,7 @@ const Nav = () => {
  
   </div>
     </div>
-//     <div
+   </div>
 //       className={clsx("sticky top-0 inset-x-0 z-50 group", {
 //         "!fixed": isHome,
 //       })}
