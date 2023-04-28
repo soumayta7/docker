@@ -5,10 +5,11 @@ const Hero = () => {
   return (
     <div className="container mx-auto px-36 mt-24">
         <h2 className="special-offer my-8">Best Seller</h2>
- <div className="grid grid-cols-2 gap-32">
+ <div className="grid grid-cols-2 gap-24">
  
   <div className="product-grid-2  py-8 px-3">
-  <div className="grid grid-cols-2 gap-16">
+  <div className="grid grid-cols-2 gap-12
+  ">
   <div className="">
   <Image
        src="/assets/products/img5.png"
