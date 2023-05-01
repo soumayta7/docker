@@ -121,8 +121,37 @@ const Nav = () => {
 </div>
  </div>
  :''}
-
-    <div className="navbar">
+ <div className="navbar lg:hidden">
+ <div className="flex justify-between py-4 px-5">
+  <div> <Image
+      priority
+      src="/svg/left.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    /> </div>
+  <div className="text-center mx-4 logo"> <div className="relative">
+                <span className="span4">C</span>
+                <span className="span5">B</span>
+                <span className="span6">D</span>
+              </div></div>
+  <div className="flex">  <Image onClick={() =>handle()}
+      priority
+      src="/svg/search.svg"
+      height={24}
+      width={24}
+      alt="arrow"
+    /> <div className="ml-5"> <Image
+    priority
+    src="/svg/cart.svg"
+    height={24}
+    width={24}
+    alt="arrow"
+  />  </div>
+</div>
+</div>
+ </div>
+    <div className="navbar hidden lg:block">
       <div className="container2 mx-auto py-2">
 <div className="flex relative">
 

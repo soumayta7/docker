@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="container mx-auto px-36 mt-24 mb-12 pb-10" style={{'background':'#fbf9e9'}}>
+    <div className="lg:container mx-auto px-8 lg:px-36 mt-24 mb-12 pb-10" style={{'background':'#fbf9e9'}}>
          <div className="flex my-10 pt-5">
  
   <div className="flex-1 w-64 ">
@@ -26,7 +26,7 @@ const Hero = () => {
  
 </div>
 
- <div className="grid grid-cols-2 gap-8">
+ <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
  {/*  */}
  <div className="grid grid-cols-4 gap-4 bg-white blog-list mb-6">
  <div  style={{ borderRadius: '3px 10px 10px 3px', overflow: 'hidden', width: '100%', height: '120px',margin:'25px' }}>

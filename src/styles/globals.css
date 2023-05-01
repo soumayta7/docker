@@ -625,7 +625,7 @@ footer p{
 }
 .subsinput{
   padding: 5.5px 25px;
-  width: 34%;
+  /* width: 34%; */
   border: 2px solid rgb(221 236 208);
   border-radius: 6px 0px 0px 6px;
   line-height: 2;
@@ -662,4 +662,39 @@ input:focus-visible{
 }
 .control-dots{
   display: none;
+}
+
+.m-foot{
+  background: #3c5924;
+  color: #fff9!important;
+  padding: 15px;
+  border-bottom:1px solid #ffffff69;
+  font-weight: 400!important;
+  font-size: 16px!important;
+}
+.logo .relative .span4,.logo .relative .span5,.logo .relative .span6{
+  font-size: 20px;
+  font-weight: 900;
+}
+.logo .relative .span4{
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: -4px;
+  left: 14px;
+}
+.logo .relative .span5{
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+
+.logo .relative .span6{
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: 6px;
+  left: 14px;
 }
